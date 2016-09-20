@@ -15,10 +15,13 @@
 # limitations under the License.
 
 # [START quickstart]
+# Import the Google Cloud client library for Google BigQuery
 from gcloud import bigquery
 
+# Instantiate the client library
 bigquery_client = bigquery.Client(project='YOUR_PROJECT_ID')
 
+# Create a new BigQuery dataset
 dataset = bigquery_client.dataset('my_new_dataset')
 dataset.create()
 # [END quickstart]

@@ -15,9 +15,12 @@
 # limitations under the License.
 
 # [START quickstart]
+# Import the Google Cloud client library for Google Cloud Storage
 from gcloud import storage
 
+# Instantiate the client library
 storage_client = storage.Client(project='YOUR_PROJECT_ID')
 
+# Create a new Cloud Storage bucket
 bucket = storage_client.create_bucket('my-new-bucket')
 # [END quickstart]
