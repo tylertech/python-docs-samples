@@ -14,15 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START quickstart]
-# Import the Google Cloud client library for Google Cloud Datastore
+# [START datastore_quickstart]
+# Imports the Google Cloud client library for Google Cloud Datastore
 from gcloud import datastore
 
-# Instantiate the client library
+# Instantiates the client library
 datastore_client = datastore.Client(project='YOUR_PROJECT_ID')
 
 task_key = datastore_client.key('Task', 1234)
 
-# Retrieve an entity from Cloud Datastore
+# Retrieves an entity
 entity = datastore_client.get(task_key)
-# [END quickstart]
+# [END datastore_quickstart]

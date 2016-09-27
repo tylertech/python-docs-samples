@@ -14,14 +14,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START quickstart]
-# Import the Google Cloud client library for Google BigQuery
+# [START bigquery_quickstart]
+# Imports the Google Cloud client library for Google BigQuery
 from gcloud import bigquery
 
-# Instantiate the client library
+# Instantiates the client library
 bigquery_client = bigquery.Client(project='YOUR_PROJECT_ID')
 
-# Create a new BigQuery dataset
+# Prepares a new dataset
 dataset = bigquery_client.dataset('my_new_dataset')
+
+# Creates the dataset
 dataset.create()
-# [END quickstart]
+# [END bigquery_quickstart]

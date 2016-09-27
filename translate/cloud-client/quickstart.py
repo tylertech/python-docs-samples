@@ -14,13 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START quickstart]
-# Import the Google Cloud client library for the Google Translate API
+# [START translate_quickstart]
+# Imports the Google Cloud client library for the Google Translate API
 from gcloud import translate
 
-# Instantiate the client library
+# Instantiates the client library
 translate_client = translate.Client('YOUR_API_KEY')
 
-# Translate some text into Russian
+# Translates some text into Russian
 translation = translate_client.translate('Hello, world!', target_language='ru')
-# [END quickstart]
+# [END translate_quickstart]

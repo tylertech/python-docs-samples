@@ -14,16 +14,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START quickstart]
-# Import the Google Cloud client library for Stackdriver Logging
+# [START logging_quickstart]
+# Imports the Google Cloud client library for Stackdriver Logging
 from gcloud import logging
 
-# Instantiate the client library
+# Instantiates the client library
 logging_client = logging.Client(project='YOUR_PROJECT_ID')
 
-# Select the log to write to
+# Selects the log to write to
 logger = logging_client.logger('my-log')
 
-# Write a log entry
+# Writes a log entry
 logger.log_text('Hello, world!')
-# [END quickstart]
+# [END logging_quickstart]
